@@ -1,0 +1,129 @@
+
+
+@media (max-width: 400px) {
+    main #project .gallery {
+
+        .container {
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 550px) {
+    header .mainTitle.wrapper {
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    #project .galleryButtons {
+        flex-direction: column;
+    }
+
+    #featured .featuredTitle {
+        width: 100%;
+    }
+
+    #call .callForms {
+        select, 
+        input {
+            width: 100%;
+        }
+    }
+
+    footer .footerContent {
+        flex-direction: column;
+        
+        .information, 
+        .twitter, 
+        .hours {
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    #about .wrapper {
+        padding: 0;
+    }
+
+    #services .servicesTitle {
+        width: 80%;
+    }
+
+    #services .serviceBox {
+        width: 45%;
+    }
+
+    #call .callTitle {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #call .callForms {
+        margin: 0;
+        display: inline-block;
+    }
+
+    #project .gallery {
+
+        .container {
+            width: 50%;
+        }
+        .container.widePhoto {
+            width: 100%;
+        }
+    }
+
+    #project .projectTitle {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+
+
+
+}
+
+
+@media (max-width: 992px) {
+
+
+
+    footer {
+        .information {
+            width: 100%;
+        }
+
+        .twitter, 
+        .hours {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        nav {
+            display: none;
+        }
+
+        .toggle label i {
+            display: block;
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

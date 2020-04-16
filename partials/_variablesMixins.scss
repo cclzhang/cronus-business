@@ -1,0 +1,40 @@
+
+// variables ---------------------------------------------------
+
+// colours //
+$primaryColour: #ed145b;
+$primaryDark: darken($primaryColour, 8);
+
+$secondaryColour: #6e45e2;
+$tertiaryColour: #0d4ef7;
+
+$primaryBlack: #171717;
+$primaryWhite: #f1f8fc;
+
+$primaryTextColour: white;
+$secondaryTextColour: rgb(165, 165, 165);
+
+
+// fonts
+$primaryFont: 'nunito', 'verdana', sans-serif;
+$secondaryFont: 'Libre Baskerville', 'Times New Roman', serif;
+
+
+
+//mixins ----------------------------------------------------
+@mixin fontSize($fontValue) {
+    font-size: $fontValue * 1px;
+    font-size: ($fontValue / 10) * 1 rem;
+}
+
+
+
+@mixin bubble() {
+    margin: 20px auto;
+    padding: 13px 35px;
+    display: inline-block;
+    border-radius: 25px;
+    color: $primaryTextColour;
+    background: $secondaryColour;
+    font-weight: 800;
+}

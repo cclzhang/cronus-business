@@ -1,0 +1,43 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    // border: 1px solid pink;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+body {
+    @include fontSize(10);
+    font-family: $primaryFont;
+}
+
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+ul, 
+ol, 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $primaryTextColour;
+}
+
+.icon {
+    width: 40px;
+}

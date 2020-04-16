@@ -1,0 +1,72 @@
+
+
+#call {
+    background-image: url(../styles/assets/call.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 0 175px 0;
+
+    h2 {
+        color: white;
+    }
+
+    h4 {
+        margin: 10px;
+        display: inline-block;
+    }
+
+    p {
+        @include fontSize(13);
+        margin: 20px 0 40px 0;
+    }
+    
+    .call {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        @include bubble ();
+        margin: 0;
+    }
+
+
+    .callTitle {
+        padding: 125px 175px 0 175px;
+        text-align: center;
+    }
+
+    .callForms {
+        margin: 0 135px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        select, 
+        input {
+            width: calc(50% - 1.5%);
+            @include bubble();
+            font-weight: 700;
+            @include fontSize(11);
+            background-color: $primaryBlack;
+            opacity: 0.8;
+            margin: 2% 0;
+            border: none;
+        }
+
+        ::placeholder {
+            color: white;
+            opacity: 1; 
+        }
+
+
+
+    }
+
+
+
+}

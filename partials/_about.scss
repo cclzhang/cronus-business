@@ -1,0 +1,59 @@
+
+
+#about {
+
+
+    .wrapper {
+        padding: 0 140px 30px 140px;
+    }
+
+    .floatingPhoto {
+        position: relative;
+        top: -100px;
+        img {
+            border-radius: 10px;
+            box-shadow: 10px 10px 35px 5px #a198b660;
+        }
+    }
+
+    .aboutTitle {
+        width: 75%;
+        text-align: center;
+        margin: 0 auto;
+        h4 {
+            margin: 10px;
+        }
+    }
+
+    .cursive {
+        color: $primaryBlack;
+    }
+
+    p {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .aboutButtons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h4 {
+            margin: 0 3px;
+        }
+
+        a {
+            @include bubble();
+            padding: 12px 39px;
+        }
+        
+        a:hover {
+            @include bubble();
+            background: $primaryTextColour;
+            box-shadow: 0px 0px 10px 0.01px #6f45e231;
+            color: $secondaryTextColour;
+        }
+                
+    }
+}

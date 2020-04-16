@@ -1,0 +1,107 @@
+
+
+#project {
+
+    .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 100px 0 15px 0;
+    }
+
+    .projectTitle {
+        padding: 0 150px;
+        h4 {
+            margin: 10px;
+        }    
+    }
+    .cursive {
+        color: $secondaryTextColour;
+    }
+
+    h2 .cursive {
+        color: $primaryBlack;
+    }
+    
+
+    p {
+        @include fontSize(13);
+        margin: 20px 0 10px 0;
+    }
+
+    .galleryButtons {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            @include bubble();
+            color: $secondaryTextColour;
+            background: transparent;
+            border: 1px solid transparent;
+        }
+
+        a:hover {
+            color: $primaryTextColour;
+            background: $primaryColour;
+            border: 1px solid $primaryColour;
+            box-shadow: 10px 10px 30px 5px #a198b660;
+        }
+    }
+
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        .container {
+            width: 20%;
+            position: relative;
+        }
+        .widePhoto {
+            width: 40%;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #ed145be6;
+            color: $primaryTextColour;
+            opacity: 0;
+            cursor: pointer;
+            
+            .icon {
+                margin: 15px;
+            }
+
+            img {
+                -webkit-filter: invert(100%);
+                filter: invert(100%);
+            }
+            h4, 
+            p {
+                color: $primaryTextColour;
+            }
+
+            h4 {
+                @include fontSize(13);
+                font-weight: 700;
+            }
+
+            p {
+                @include fontSize(10);
+                margin: 5px 0;
+            }
+        }
+        .container:hover .overlay{
+            opacity: 1;
+        }
+    }
+
+
+}

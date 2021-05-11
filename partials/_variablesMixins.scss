@@ -24,7 +24,7 @@ $secondaryFont: 'Libre Baskerville', 'Times New Roman', serif;
 //mixins ----------------------------------------------------
 @mixin fontSize($fontValue) {
     font-size: $fontValue * 1px;
-    font-size: ($fontValue / 10) * 1 rem;
+    font-size: ($fontValue / 10) * 1rem;
 }
 
 
